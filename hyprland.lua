@@ -8,6 +8,7 @@ require("permissions")
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("waypaper --restore")
 end)
 
 -------------------------------
@@ -54,14 +55,6 @@ hl.device({
 	sensitivity = -0.5,
 })
 
---------------------------------
----- WINDOWS AND WORKSPACES ----
---------------------------------
-
--- See https://wiki.hypr.land/configuring/core/rules/
-
--- Example window rules that are useful
-
 local suppressMaximizeRule = hl.window_rule({
 	-- Ignore maximize requests from all apps. You'll probably like this.
 	name = "suppress-maximize-events",
@@ -69,7 +62,7 @@ local suppressMaximizeRule = hl.window_rule({
 
 	suppress_event = "maximize",
 })
-suppressMaximizeRule:set_enabled(false)
+-- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
 	-- Fix some dragging issues with XWayland
