@@ -17,3 +17,13 @@ hl.window_rule({
 
 	no_focus = true,
 })
+
+hl.window_rule({
+	name = "tile-file-manager",
+	match = {
+		class = "^(xdg-desktop-portal-gtk)$",
+	},
+
+	fullscreen = false,
+	float = false,
+})

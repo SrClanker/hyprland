@@ -1,7 +1,8 @@
-hl.env("HYPRCURSOR_SIZE", "32")
-hl.env("HYPRCURSOR_THEME", "Capitaine-cursors-light")
+hl.env("XCURSOR_THEME", "capitaine-cursors-light")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "capitaine-cursors-light")
 
-hl.env("GTK_THEME", "Adwaita-dark")
 hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
